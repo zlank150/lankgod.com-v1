@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--Author: Zach Lanke
+	DoC: 11/28/23
+	Description: Final Project Index-->
+<html lang="en-US">
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "description" content = "lankgod.com">
+		<meta name = "author" content = "Zach Lanke">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+		<title>LANKGOD.COM</title>
+
+		<link rel="stylesheet" href="./css/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--Second linked stylesheet is used for most of the social media logos (itch.io's wouldn't work)-->
+
+	</head>
+
+	<body>
+		<div class = "fullpage">
+			<header>
+				<h1>
+					<img class = "logo" src="./images/site-logo-halfsize.png" alt="lankgod.com">
+				</h1>
+				<nav> <!--Navigation bar below logo image-->
+					<a href = "./index.html" class = "navlink">HOME</a> |
+					<a href = "./audio.html" class = "navlink">AUDIO</a> |
+					<a href = "./visual.html" class = "navlink">VISUAL</a> |
+					<a href = "./contact.html" class = "navlink">CONTACT</a> 
+				</nav>
+			</header>
+
+			<div class = "contact-container"> <!--Flexbox container for social media links & email form-->
+				<div class = "social-flexbox">
+					<a href = "https://twitter.com/lankgod" class = "fa fa-twitter"></a>
+					<a href = "https://twitter.com/lankgod" class = "footlink">Twitter</a>
+				</div>
+				<div class = "social-flexbox">
+					<a href = "https://youtube.com/lankgod" class = "fa fa-youtube"></a>
+					<a href = "https://youtube.com/lankgod" class = "footlink">YouTube</a>
+				</div>
+				<div class = "social-flexbox">
+					<a href = "https://instagram.com/lankgod" class = "fa fa-instagram"></a>
+					<a href = "https://instagram.com/lankgod" class = "footlink">Instagram</a>
+				</div>
+				<div class = "social-flexbox">
+					<a href = "https://instagram.com/lankgod3d" class = "fa fa-instagram"></a>
+					<a href = "https://instagram.com/lankgod3d" class = "footlink">Art Instagram</a>
+				</div>
+				<div class = "social-flexbox">
+					<a href = "https://lankgod.itch.io" class = "footlink">
+						<img src="./images/itch-io.svg"  class = "svg" alt = "itch.io">
+					</a>
+					<a href = "https://lankgod.itch.io" class = "footlink">Itch.io</a>
+				</div>
+				<div class = "social-flexbox">
+					<a href = "https://soundcloud.com/lankgod" class = "fa fa-soundcloud"></a>
+					<a href = "https://soundcloud.com/lankgod" class = "footlink">SoundCloud</a>
+				</div>
+
+				<div class = "contact-flexbox"> <!--This flexbox contains the email form-->
+					Send me an email at lankgodcast@gmail.com or using the form below
+					<br>
+					<br>
+					<fieldset>
+						<legend class = "legend">Let's see it</legend>
+						<label for = "subject">What you need?</label>
+						<select name = "subject" id = "subject">
+							<option value = "General">General</option>
+							<option value = "Audio">Audio</option>
+							<option value = "Visual">Visual</option>
+						</select>
+						<br>
+						<form>
+							What's your name? <input type = "text" name = "name" id = "name" placeholder = "Firstname Lastname">
+							<br>
+							What's your email? <input type = "email" name = "email" id = "email" placeholder = "youremail@email.com" 	required>
+							<br>
+							How'd you find me? <input type = "text" name = "how" id = "how" placeholder = "A friend told me">
+							<br>
+							Write your email here:
+							<br>
+							<textarea name = "emailbody" id = "emailbody" placeholder = "Once upon a time..." 
+								class = "emailbody" required></textarea>
+							<br>
+							<input type = "submit" value = "Send">
+						</form>
+					</fieldset>
+				</div>
+			</div>
+			
+			<p></p>
+
+			<footer> <!--Footer with copyright & links-->
+				Copyright &copy; 2023 lankgod.com | 
+					<a href = "./index.html" class = "footlink">HOME</a> |
+					<a href = "./audio.html" class = "footlink">AUDIO</a> |
+					<a href = "./visual.html" class = "footlink">VISUAL</a> |
+					<a href = "./contact.html" class = "footlink">CONTACT</a> 	
+			</footer>
+		</div>
+	</body>
+
+</html>
